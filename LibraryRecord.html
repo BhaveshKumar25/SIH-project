@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Library Records</title>
+  <style>
+    body {font-family: Arial, sans-serif; margin: 20px;}
+    table {border-collapse: collapse; width: 100%;}
+    td {padding: 10px;}
+    input, select {padding: 6px; width: 95%;}
+    button {padding: 10px 20px; margin-top: 15px; background: #4CAF50; color: white; border: none; cursor: pointer;}
+    button:hover {background: #45a049;}
+  </style>
+</head>
+<body>
+  <h2>Student Library Records</h2>
+  <form onsubmit="alert('Library record submitted'); return false;">
+    <table border="1">
+      <tr>
+        <td>Enrollment Number</td>
+        <td><input type="text" required></td>
+        <td>Roll Number</td>
+        <td><input type="text" required></td>
+      </tr>
+      <tr>
+        <td>Student Name</td>
+        <td><input type="text" required></td>
+        <td>Branch</td>
+        <td><input type="text" required></td>
+      </tr>
+      <tr>
+        <td>Year</td>
+        <td><input type="number" min="1" max="4" required></td>
+        <td>Section</td>
+        <td><input type="text" required></td>
+      </tr>
+      <tr>
+        <td>Book ID</td>
+        <td><input type="text" required></td>
+        <td>Book Title</td>
+        <td><input type="text" required></td>
+      </tr>
+      <tr>
+        <td>Author</td>
+        <td><input type="text"></td>
+        <td>Issue Date</td>
+        <td><input type="date" required></td>
+      </tr>
+      <tr>
+        <td>Due Date</td>
+        <td><input type="date" required></td>
+        <td>Return Date</td>
+        <td><input type="date"></td>
+      </tr>
+      <tr>
+        <td>Status</td>
+        <td>
+          <select required>
+            <option value="">Select</option>
+            <option value="Issued">Issued</option>
+            <option value="Returned">Returned</option>
+            <option value="Overdue">Overdue</option>
+          </select>
+        </td>
+        <td>Fine Amount</td>
+        <td><input type="number" min="0" value="0"></td>
+      </tr>
+      <tr>
+        <td>Fine Status</td>
+        <td colspan="3">
+          <select>
+            <option value="">Select</option>
+            <option value="Paid">Paid</option>
+            <option value="Pending">Pending</option>
+          </select>
+        </td>
+      </tr>
+    </table>
+    <button type="submit">Submit</button>
+  </form>
+</body>
+</html>
