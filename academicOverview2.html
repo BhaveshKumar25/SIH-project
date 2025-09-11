@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>College ERP Dashboard</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f5f7fb;
+      color: #333;
+    }
+    header {
+      background: #3949ab;
+      color: white;
+      padding: 1rem 2rem;
+      text-align: center;
+      font-size: 1.5rem;
+    }
+    .container {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      padding: 20px;
+    }
+    .card {
+      background: white;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      width: 100%;
+    }
+    h2 {
+      font-size: 1.2rem;
+      margin-bottom: 15px;
+      color: #3949ab;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    ul li {
+      padding: 10px;
+      border-bottom: 1px solid #eee;
+    }
+    ul li:last-child {
+      border-bottom: none;
+    }
+    /* Progress bar */
+    .progress {
+      margin-bottom: 15px;
+    }
+    .bar {
+      width: 100%;
+      background: #ddd;
+      border-radius: 20px;
+      overflow: hidden;
+    }
+    .fill {
+      height: 12px;
+      background: #3949ab;
+      border-radius: 20px 0 0 20px;
+    }
+  </style>
+</head>
+<body>
+  <header>📊 College ERP Dashboard</header>
+
+  <div class="container">
+    <!-- Assignments -->
+    <div class="card">
+      <h2>📝 Assignments</h2>
+      <ul>
+        <li>Mathematics – Due Sept 15</li>
+        <li>Physics – Due Sept 18</li>
+        <li>Computer Science – Due Sept 20</li>
+      </ul>
+    </div>
+
+    <!-- Attendance Tracker -->
+    <div class="card">
+      <h2>📊 Attendance Tracker</h2>
+      <div class="progress">
+        <p>Mathematics – 85%</p>
+        <div class="bar"><div class="fill" style="width:85%"></div></div>
+      </div>
+      <div class="progress">
+        <p>Physics – 92%</p>
+        <div class="bar"><div class="fill" style="width:92%"></div></div>
+      </div>
+      <div class="progress">
+        <p>Computer Science – 78%</p>
+        <div class="bar"><div class="fill" style="width:78%"></div></div>
+      </div>
+    </div>
+
+    <!-- Subjects & Faculty -->
+    <div class="card">
+      <h2>📚 Subjects & Faculty</h2>
+      <ul>
+        <li>Mathematics – Prof. Sharma</li>
+        <li>Physics – Dr. Reddy</li>
+        <li>Computer Science – Ms. Gupta</li>
+        <li>Electronics – Mr. Khan</li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>
