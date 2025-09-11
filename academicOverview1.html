@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>College ERP Dashboard</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f5f7fb;
+      color: #333;
+    }
+    header {
+      background: #3949ab;
+      color: white;
+      padding: 1rem 2rem;
+      text-align: center;
+      font-size: 1.5rem;
+    }
+    .container {
+      display: grid;
+      grid-template-columns: 1fr 2fr 1fr;
+      gap: 20px;
+      padding: 20px;
+    }
+    .card {
+      background: white;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      margin-bottom: 20px;
+    }
+    h2 {
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+      color: #3949ab;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    ul li {
+      padding: 8px 0;
+      border-bottom: 1px solid #eee;
+    }
+    .subject-list {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    .subject-list th, .subject-list td {
+      padding: 10px;
+      text-align: left;
+      border-bottom: 1px solid #eee;
+    }
+    .subject-list th {
+      color: #3949ab;
+      font-size: 0.95rem;
+    }
+    /* Attendance Bar */
+    .progress-container {
+      margin: 10px 0;
+    }
+    .progress-label {
+      font-size: 0.9rem;
+      margin-bottom: 4px;
+    }
+    .progress-bar {
+      background: #e0e0e0;
+      border-radius: 6px;
+      overflow: hidden;
+      height: 14px;
+    }
+    .progress {
+      height: 100%;
+      text-align: right;
+      padding-right: 5px;
+      font-size: 0.75rem;
+      color: white;
+      border-radius: 6px;
+    }
+    .math { width: 85%; background: #3949ab; }
+    .physics { width: 92%; background: #1e88e5; }
+    .cprog { width: 78%; background: #43a047; }
+    .electronics { width: 80%; background: #f4511e; }
+    .english { width: 95%; background: #6a1b9a; }
+    footer {
+      background: #3949ab;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      margin-top: 20px;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin: 15px 0;
+    }
+    nav a {
+      text-decoration: none;
+      color: #3949ab;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <header>🎓 College ERP Dashboard</header>
+
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Calendar</a>
+    <a href="#">Dashboard</a>
+    <a href="#">Messages</a>
+    <a href="#">Profile</a>
+  </nav>
+
+  <div class="container">
+    <!-- Left Sidebar -->
+    <div>
+      <div class="card">
+        <h2>Quick Access</h2>
+        <ul>
+          <li>Admissions</li>
+          <li>Fees</li>
+          <li>Hostel</li>
+          <li>Records</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Center Content -->
+    <div>
+      <!-- Assignments -->
+      <div class="card">
+        <h2>Assignments</h2>
+        <ul>
+          <li>📘 Maths Assignment 1 – <b>Due: July 15</b></li>
+          <li>💻 C Programming Lab Report – <b>Due: July 20</b></li>
+          <li>📡 Physics Project – <b>Due: July 25</b></li>
+          <li>📝 English Essay – <b>Due: July 30</b></li>
+        </ul>
+      </div>
+
+      <!-- Attendance Tracker -->
+      <div class="card">
+        <h2>Attendance Tracker</h2>
+        <div class="progress-container">
+          <div class="progress-label">Mathematics I – 85%</div>
+          <div class="progress-bar"><div class="progress math">85%</div></div>
+        </div>
+        <div class="progress-container">
+          <div class="progress-label">Physics – 92%</div>
+          <div class="progress-bar"><div class="progress physics">92%</div></div>
+        </div>
+        <div class="progress-container">
+          <div class="progress-label">Programming in C – 78%</div>
+          <div class="progress-bar"><div class="progress cprog">78%</div></div>
+        </div>
+        <div class="progress-container">
+          <div class="progress-label">Electronics Basics – 80%</div>
+          <div class="progress-bar"><div class="progress electronics">80%</div></div>
+        </div>
+        <div class="progress-container">
+          <div class="progress-label">English Communication – 95%</div>
+          <div class="progress-bar"><div class="progress english">95%</div></div>
+        </div>
+      </div>
+
+      <!-- Subjects & Faculty -->
+      <div class="card">
+        <h2>Subjects & Faculty</h2>
+        <table class="subject-list">
+          <tr>
+            <th>Subject</th>
+            <th>Faculty</th>
+          </tr>
+          <tr>
+            <td>Mathematics I</td>
+            <td>Dr. A. Sharma</td>
+          </tr>
+          <tr>
+            <td>Physics</td>
+            <td>Prof. R. Mehta</td>
+          </tr>
+          <tr>
+            <td>Programming in C</td>
+            <td>Ms. S. Nair</td>
+          </tr>
+          <tr>
+            <td>Electronics Basics</td>
+            <td>Dr. V. Kumar</td>
+          </tr>
+          <tr>
+            <td>English Communication</td>
+            <td>Mr. P. Rao</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    © 2025 College ERP | All Rights Reserved
+  </footer>
+</body>
+</html>
